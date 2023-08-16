@@ -1,0 +1,29 @@
+.banner {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  
+    background-image: linear-gradient(rgba(7, 6, 6, 0.4), rgba(0, 0, 0, 0.4)),
+      url("https://img.freepik.com/foto-gratis/conductor-mujer-elegante-mirando-asiento-trasero-sonriendo-feliz_197531-22676.jpg?w=826&t=st=1691529808~exp=1691530408~hmac=6f72dd90342080c31e382fba34fb606dca0a7c8f3ee94fa81a7c8bcdfe96baba");
+  }
+  
+  .banner-container {
+    text-align: center;
+    padding: 15% 0;
+  }
+  
+  .banner h1 {
+    margin: 0;
+    color: white;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.781);
+    font-size: 62px;
+    font-weight: bold;
+  }
+  
+  .banner p {
+    font-size: 40px;
+    color: rgb(212, 42, 42);
+    opacity: 0.8;
+    font-weight: bolder;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.76);
+  }

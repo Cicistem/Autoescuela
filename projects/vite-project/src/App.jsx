@@ -1,8 +1,13 @@
-import Home from "./components/Home/home";
+import React from 'react'
+import MainRouter from './routes/MainRouter';
 
+const App = ()=>{
+  return (
+    <div className='App'>
+    <MainRouter/>
+  </div>
+  );
 
-function App() {
-  return <Home/>;
-}
+};
 
 export default App;
