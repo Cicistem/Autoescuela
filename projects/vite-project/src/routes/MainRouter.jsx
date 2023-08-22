@@ -1,20 +1,22 @@
 import React from 'react'
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import Home from '../components/pages/home';
-import Nosotros from '../components/pages/Nosotros';
-import Clases from '../components/pages/Clases';
-import Contact from '../components/pages/Contact';
+import Home from '../pages/Home';
+import Nosotros from '../pages/Nosotros';
+import Clases from '../pages/Clases';
+import Contact from '../pages/Contact';
 import Navbar from '../components/Navbar/Navbar';
+import Banner from '../components/Banner/Banner';
 
 const MainRouter =() =>{
     return(
         <Router>
             <Navbar/>
+            <Banner/>
             <Routes>
                 <Route path= "/" element = {<Home/>}/>
-                <Route path= "/" element ={<Nosotros/>}/>
-                <Route path= "/" element ={<Clases/>}/>
-                <Route path= "/" element ={<Contact/>}/>
+                <Route path= "/nosotros" element ={<Nosotros/>}/>
+                <Route path= "/clases" element ={<Clases/>}/>
+                <Route path= "/contacto" element ={<Contact/>}/>
 
 
             </Routes>

@@ -2,17 +2,7 @@ import React,{useState} from "react";
 import styled from "styled-components";
 import BurguerButton from "./BurguerButton";
 
-/*const Navbar = () => {
-  return (
-    <div className='nav-container'>
-        <nav className='navbar'>
-          <h1 className='navbar-logo'>Autoescuela Giachello</h1>
-          </nav>
-    </div>
-  );
-};
 
-export default Navbar;*/
 
 function Navbar() {
 
@@ -27,10 +17,9 @@ function Navbar() {
         <h2>Autoescuela <span>Giachello</span></h2>
         <div className={`links ${clicked ? 'active' : ''}`}>
           <a onClick={handleClick} href="#h">Home</a>
-          <a onClick={handleClick} href="#h">Shop</a>
-          <a onClick={handleClick} href="#h">About</a>
-          <a onClick={handleClick} href="#h">Contact</a>
-          <a onClick={handleClick} href="#h">Blog</a>
+          <a onClick={handleClick} href="#h">Nosotros</a>
+          <a onClick={handleClick} href="#h">Clases</a>
+          <a onClick={handleClick} href="#h">Contacto</a>
         </div>
         <div className='burguer'>
           <BurguerButton clicked={clicked} handleClick={handleClick} />
@@ -38,10 +27,10 @@ function Navbar() {
         <BgDiv className={`initial ${clicked ? ' active' : ''}`}></BgDiv>
       </NavContainer>
     </>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
 
 const NavContainer = styled.nav`
   h2{
